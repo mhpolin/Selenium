@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestNG" parallel="classes">
+	<listeners>
+		<listener class-name="testNG.TestNGListener"></listener>
+	</listeners>
+
+	<test name="Test Listener">
+		<classes>
+			<class name="testNG.TestCases"/>
+
+			<class name="testNG.TestDependency"/>
+		</classes>
+	</test>
+</suite>
