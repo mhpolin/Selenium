@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="testNG.ReporterTest">
+      <class name="testNG.TestCases">
         <methods>
-          <include name="testReporterTwo"/>
+          <include name="openBrowser"/>
+          <include name="testToFail"/>
         </methods>
-      </class> <!-- testNG.ReporterTest -->
+      </class> <!-- testNG.TestCases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

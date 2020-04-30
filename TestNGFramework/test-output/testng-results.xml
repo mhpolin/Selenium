@@ -2,16 +2,20 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-04-20T15:43:21Z" name="Default suite" finished-at="2020-04-20T15:43:21Z" duration-ms="35">
+  <suite started-at="2020-04-24T09:34:28Z" name="Default suite" finished-at="2020-04-24T09:34:40Z" duration-ms="12186">
     <groups>
     </groups>
-    <test started-at="2020-04-20T15:43:21Z" name="Default test" finished-at="2020-04-20T15:43:21Z" duration-ms="35">
-      <class name="testNG.ReporterTest">
-        <test-method signature="testReporterOne()[pri:0, instance:testNG.ReporterTest@568bf312]" started-at="2020-04-20T17:43:21Z" name="testReporterOne" description="testReporterOne" finished-at="2020-04-20T17:43:21Z" duration-ms="9" status="PASS">
+    <test started-at="2020-04-24T09:34:28Z" name="Default test" finished-at="2020-04-24T09:34:40Z" duration-ms="12186">
+      <class name="testNG.TestCases">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:testNG.TestCases@123f1134]" started-at="2020-04-24T11:34:28Z" name="openBrowser" finished-at="2020-04-24T11:34:33Z" duration-ms="4711" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testReporterOne -->
-        <test-method signature="testReporterTwo()[pri:1, instance:testNG.ReporterTest@568bf312]" started-at="2020-04-20T17:43:21Z" name="testReporterTwo" description="testReporterTwo" finished-at="2020-04-20T17:43:21Z" duration-ms="2" status="FAIL">
+        </test-method> <!-- openBrowser -->
+        <test-method signature="login()[pri:0, instance:testNG.TestCases@123f1134]" started-at="2020-04-24T11:34:33Z" name="login" finished-at="2020-04-24T11:34:40Z" duration-ms="7445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="testToFail()[pri:0, instance:testNG.TestCases@123f1134]" started-at="2020-04-24T11:34:40Z" name="testToFail" finished-at="2020-04-24T11:34:40Z" duration-ms="5" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -22,7 +26,7 @@
 	at org.testng.Assert.failNotEquals(Assert.java:512)
 	at org.testng.Assert.assertTrue(Assert.java:41)
 	at org.testng.Assert.assertTrue(Assert.java:51)
-	at testNG.ReporterTest.testReporterTwo(ReporterTest.java:30)
+	at testNG.TestCases.testToFail(TestCases.java:48)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -53,8 +57,8 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testReporterTwo -->
-      </class> <!-- testNG.ReporterTest -->
+        </test-method> <!-- testToFail -->
+      </class> <!-- testNG.TestCases -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
