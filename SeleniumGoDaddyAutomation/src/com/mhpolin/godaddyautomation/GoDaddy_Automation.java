@@ -42,8 +42,6 @@ public class GoDaddy_Automation {
         
      // Get Current URL
         driver.getCurrentUrl();
-
-        //Code implementation example
         String pageURL = driver.getCurrentUrl();
         System.out.println(pageURL);
 
